@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const observer = new IntersectionObserver((observables) => {
-            observables.forEach((o) => {
+        observables.forEach((o) => {
             if (o.intersectionRatio > 0) {
                 document.querySelector("img.header").classList.add("reduced");
                 document.querySelector("header").classList.add("reduced");
@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("a[href='/cosplay']").addEventListener("click", e => {
-       e.preventDefault();
-       window.history.pushState({page: "cosplay"}, "cosplay", "cosplay");
-       document.querySelectorAll("#container img:not(.cosplay)").forEach(e => {
-           e.classList.add("none");
-       });
+        e.preventDefault();
+        window.history.pushState({page: "cosplay"}, "cosplay", "cosplay");
+        document.querySelectorAll("#container img:not(.cosplay)").forEach(e => {
+            e.classList.add("none");
+        });
     });
 
     document.querySelectorAll("a[href='/']").forEach(e => {

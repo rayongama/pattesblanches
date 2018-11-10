@@ -6,35 +6,40 @@ namespace Pattes;
 class Ressource
 {
 
-  private $name;
+    private $name;
 
-  private $count;
+    private $count;
 
-  private $size;
+    private $size;
 
-  function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName(): string {
-    return $this->name;
-  }
+    public function getName(): string
+    {
+        return $this->name;
+    }
 
-  public function setCount(int $count){
-    $this->count = $count;
-  }
+    public function setCount(int $count)
+    {
+        $this->count = $count;
+    }
 
-  public function getCount(): int {
-    return $this->count;
-  }
+    public function getCount(): int
+    {
+        return $this->count;
+    }
 
-  public function setSize(int $size) {
-    $this->size = $size;
-  }
+    public function setSize(int $size)
+    {
+        $this->size = $size;
+    }
 
-  public function getSize(): int {
-    return $this->size;
-  }
+    public function getSize(): int
+    {
+        return $this->size;
+    }
 
 }

@@ -6,40 +6,40 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit291545a72af4765f8f0e132be926eaec
 {
-    public static $files = array (
+    public static $files = array(
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
     );
 
-    public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'Psr\\Http\\Message\\' => 17,
-            'Pattes\\View\\' => 12,
-            'Pattes\\' => 7,
-        ),
-        'G' => 
-        array (
-            'GuzzleHttp\\Psr7\\' => 16,
-        ),
+    public static $prefixLengthsPsr4 = array(
+        'P' =>
+            array(
+                'Psr\\Http\\Message\\' => 17,
+                'Pattes\\View\\' => 12,
+                'Pattes\\' => 7,
+            ),
+        'G' =>
+            array(
+                'GuzzleHttp\\Psr7\\' => 16,
+            ),
     );
 
-    public static $prefixDirsPsr4 = array (
-        'Psr\\Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'Pattes\\View\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/private/Views',
-        ),
-        'Pattes\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/private',
-        ),
-        'GuzzleHttp\\Psr7\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
-        ),
+    public static $prefixDirsPsr4 = array(
+        'Psr\\Http\\Message\\' =>
+            array(
+                0 => __DIR__ . '/..' . '/psr/http-message/src',
+            ),
+        'Pattes\\View\\' =>
+            array(
+                0 => __DIR__ . '/../..' . '/private/Views',
+            ),
+        'Pattes\\' =>
+            array(
+                0 => __DIR__ . '/../..' . '/private',
+            ),
+        'GuzzleHttp\\Psr7\\' =>
+            array(
+                0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+            ),
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     border: none;
-  /*font-family: "Roboto", sans-serif;*/
+    /*font-family: "Roboto", sans-serif;*/
     box-sizing: content-box;
 }
 
@@ -26,36 +26,44 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
     transition: height 1s;
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  color: white;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    color: white;
 }
 
 header a {
-  height: 90%;
-  color: white;
+    height: 90%;
+    color: white;
 }
 
 header.reduced {
-  height: 3em;
+    height: 3em;
 }
 
 header img, header picture {
-  height: 90%;
+    height: 90%;
 }
 
 header a.title {
-    font-size: 2em;
+    font-size: 1.5em;
     width: 20%;
     transition: font-size .5s;
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    transition: font-size .5s;
 }
 
 header.reduced span {
-  font-size: 1em;
+    font-size: 0.5em;
+}
+
+img.header.reduced {
+    margin: 0;
 }
 
 header nav {
@@ -63,7 +71,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-  margin-right: 10em;
+    margin-right: 10em;
 }
 
 header nav a {
@@ -72,18 +80,18 @@ header nav a {
     border-bottom: 1px transparent solid;
     color: white;
     transition: .4s border-bottom-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #instagram {
-  background-image: url('Instagram_logo.svg');
-  height: 1.5em;
-  width: 1.5em;
-  background-size: cover;
-  border-bottom: none;
-  background-repeat: no-repeat;
+    background-image: url('Instagram_logo.svg');
+    height: 1.5em;
+    width: 1.5em;
+    background-size: cover;
+    border-bottom: none;
+    background-repeat: no-repeat;
 }
 
 header nav a:hover {
@@ -94,7 +102,7 @@ header nav a:hover {
     width: 100%;
 }
 
-#container2{
+#container2 {
     width: 80%;
     margin: 4em auto auto;
     display: flex;
@@ -102,7 +110,7 @@ header nav a:hover {
     justify-content: space-evenly;
 }
 
-#container{
+#container {
     width: 100%;
     margin: 4em auto auto;
     display: flex;
@@ -115,16 +123,16 @@ header nav a:hover {
 }
 
 img.header {
-  margin: 3em auto auto;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: 0 10%;
-  transition: height 1s;
+    margin: 3em auto auto;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 0 10%;
+    transition: height 1s;
 }
 
 img.header.reduced {
-  height: 30em;
+    height: 30em;
 }
 
 #container img {
@@ -147,5 +155,5 @@ img.header.reduced {
 }
 
 .none {
-  display: none;
+    display: none;
 }

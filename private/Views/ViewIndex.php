@@ -8,24 +8,26 @@ use Pattes\Utils;
 class ViewIndex extends View
 {
 
-  public function __construct()
-  {
-    parent::__construct();
+    public function __construct()
+    {
+        parent::__construct();
 
-    $this->addStyle("css/index.css");
-    $this->addScript("js/index.js");
-  }
+        $this->addStyle("css/index.css");
+        $this->addScript("js/index.js");
+    }
 
-  private $filter = false;
+    private $filter = false;
 
-  public function toggleFilter(): View {
-    $this->filter = !($this->filter);
-    return $this;
-  }
+    public function toggleFilter(): View
+    {
+        $this->filter = !($this->filter);
+        return $this;
+    }
 
 
-  protected function header_bar_render(): View {
-    echo <<<END
+    protected function header_bar_render(): View
+    {
+        echo <<<END
   <header>
     <a href="/">
     <picture>
@@ -42,14 +44,15 @@ class ViewIndex extends View
     </nav>
   </header>
 END;
-    return $this;
+        return $this;
 
-  }
+    }
 
-  public function render(): View {
-    $this->head_render();
-    $this->header_bar_render();
-    echo <<<END
+    public function render(): View
+    {
+        $this->head_render();
+        $this->header_bar_render();
+        echo <<<END
   <picture>
       <source srcset="img/struct/webp/bg_index.webp" type="image/webp">
       <source srcset="img/struct/bg_index.jpg" type="image/jpg">
@@ -58,15 +61,15 @@ END;
   <div id="container">
 
 END;
-    $cosplay = [1, 2, 3, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33];
-    for ($i = 2; $i <= 38; $i += 1) {
-      $class = "";
-      if (in_array($i, $cosplay)) {
-        $class = "cosplay";
-      } else if ($this->filter) {
-        $class = "none";
-      }
-      echo <<<END
+        $cosplay = [1, 2, 3, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33];
+        for ($i = 2; $i <= 38; $i += 1) {
+            $class = "";
+            if (in_array($i, $cosplay)) {
+                $class = "cosplay";
+            } else if ($this->filter) {
+                $class = "none";
+            }
+            echo <<<END
     <picture>
       <source srcset="img/data/webp/$i.webp" type="image/webp">
       <source srcset="img/data/$i.jpg" type="image/jpg">
@@ -74,14 +77,14 @@ END;
     </picture>
 
 END;
-    }
-    echo <<<END
+        }
+        echo <<<END
   </div>
 END;
 
 
-    $this->foot_render();
-    return $this;
-  }
+        $this->foot_render();
+        return $this;
+    }
 
 }

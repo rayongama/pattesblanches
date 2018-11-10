@@ -1,17 +1,19 @@
 {
-    "name": "rayongama/pattesblanches",
-    "type": "project",
-    "require": {
-        "guzzlehttp/psr7": "^1.4"
-    },
-    "autoload": {
-      "psr-4": {"Pattes\\": "private",
-                "Pattes\\View\\": "private/Views"}
-    },
-    "authors": [
-        {
-            "name": "Benoit SAINT-ETIENNE",
-            "email": "benoit.saint.etienne@gmail.com"
-        }
-    ]
+  "name": "rayongama/pattesblanches",
+  "type": "project",
+  "require": {
+    "guzzlehttp/psr7": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pattes\\": "private",
+      "Pattes\\View\\": "private/Views"
+    }
+  },
+  "authors": [
+    {
+      "name": "Benoit SAINT-ETIENNE",
+      "email": "benoit.saint.etienne@gmail.com"
+    }
+  ]
 }

@@ -56,7 +56,7 @@ header nav a:hover {
     width: 100%;
 }
 
-#container2{
+#container2 {
     width: 80%;
     margin: 4em auto auto;
     display: flex;
@@ -64,7 +64,7 @@ header nav a:hover {
     justify-content: space-evenly;
 }
 
-#container{
+#container {
     width: 100%;
     margin: 4em auto auto;
     display: flex;

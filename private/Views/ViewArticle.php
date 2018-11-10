@@ -7,17 +7,18 @@ use Pattes\Utils;
 
 class ViewArticle extends ViewIndex
 {
-  public function __construct()
-  {
-    parent::__construct();
+    public function __construct()
+    {
+        parent::__construct();
 
-    $this->addStyle("css/article.css");
-  }
+        $this->addStyle("css/article.css");
+    }
 
-  public function render(): View {
-    $this->head_render();
-    $this->header_bar_render();
-    echo <<<END
+    public function render(): View
+    {
+        $this->head_render();
+        $this->header_bar_render();
+        echo <<<END
   <article>
     <p>Bonjour à tous ! Aujourd'hui, je vais vous montrer mon premier tutoriel pour la Couronne!</p>
     <p>Tu auras besoin de :
@@ -32,8 +33,8 @@ class ViewArticle extends ViewIndex
   </article>
 
 END;
-    $this->foot_render();
-    return $this;
-  }
+        $this->foot_render();
+        return $this;
+    }
 
 }

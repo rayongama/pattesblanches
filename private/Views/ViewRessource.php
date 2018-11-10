@@ -7,27 +7,29 @@ use Pattes\Utils;
 
 class ViewRessource extends View
 {
-  private $ressource_key;
-  private $ressource;
+    private $ressource_key;
+    private $ressource;
 
-  public function __construct()
-  {
-    parent::__construct();
+    public function __construct()
+    {
+        parent::__construct();
 
-    $this->addStyle("css/dl.css");
-  }
+        $this->addStyle("css/dl.css");
+    }
 
-  public function setRessourceKey(string $key): ViewRessource {
-    $this->ressource_key = $key;
-    $this->ressource = Utils::downloadRessources($key);
-    return $this;
-  }
+    public function setRessourceKey(string $key): ViewRessource
+    {
+        $this->ressource_key = $key;
+        $this->ressource = Utils::downloadRessources($key);
+        return $this;
+    }
 
-  public function render(): View {
-    $this->head_render();
-    $photos_str = $this->ressource->getCount() === 1 ? "photo" : "photos";
-    $size = Utils::formatBytes($this->ressource->getSize());
-    echo <<<END
+    public function render(): View
+    {
+        $this->head_render();
+        $photos_str = $this->ressource->getCount() === 1 ? "photo" : "photos";
+        $size = Utils::formatBytes($this->ressource->getSize());
+        echo <<<END
   <div id="container">
     <div>
       <h4>{$this->ressource->getName()}</h4><br />
@@ -44,8 +46,8 @@ class ViewRessource extends View
 
 END;
 
-    $this->foot_render();
-    return $this;
-  }
+        $this->foot_render();
+        return $this;
+    }
 
 }
