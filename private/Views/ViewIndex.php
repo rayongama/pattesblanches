@@ -40,7 +40,7 @@ class ViewIndex extends View
       <a href="/cosplay">Cosplay</a>
       <a href="#">Création</a>
       <a href="#">Contact</a>
-      <a href="https://www.instagram.com/pequena_muertes/" id="instagram"></a>
+      <a href="https://www.instagram.com/alaskaa_green/" id="instagram"></a>
     </nav>
   </header>
 END;
