@@ -31,7 +31,6 @@ if (strlen($path) !== 1 && \Pattes\Utils::downloadKeyExists($key)) {
         ->setTitle(INITIAL_TITLE)
         ->render();
 } else {
-    var_dump($key);
     $view = (new \Pattes\View\ViewIndex())
         ->setTitle(INITIAL_TITLE);
     if ($key === "cosplay" || $key === "cosplay/") {

@@ -33,7 +33,7 @@ class ViewIndex extends View
     <picture>
       <source srcset="img/struct/webp/logo.webp" type="image/webp">
       <source srcset="img/struct/logo.png" type="image/png">
-      <img src="img/struct/logo.png">
+      <img src="img/struct/logo.png" importance="high">
     </picture></a>
     <a class="title" href="/"><span>$this->title</span></a>
     <nav>
@@ -73,7 +73,7 @@ END;
     <picture>
       <source srcset="img/data/webp/$i.webp" type="image/webp">
       <source srcset="img/data/$i.jpg" type="image/jpg">
-      <img class="$class" src="img/data/$i.jpg">
+      <img class="$class" src="img/data/$i.jpg" decoding="async" importance="low">
     </picture>
 
 END;
