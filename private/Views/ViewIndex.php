@@ -33,7 +33,7 @@ class ViewIndex extends View
     <picture>
       <source srcset="img/struct/webp/logo.webp" type="image/webp">
       <source srcset="img/struct/logo.png" type="image/png">
-      <img src="img/struct/logo.png" importance="high">
+      <img src="img/struct/logo.png">
     </picture></a>
     <a class="title" href="/"><span>$this->title</span></a>
     <nav>
@@ -62,7 +62,7 @@ END;
 
 END;
         $cosplay = [1, 2, 3, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33];
-        for ($i = 2; $i <= 38; $i += 1) {
+        for ($i = 2; $i < 38; $i += 1) {
             $class = "";
             if (in_array($i, $cosplay)) {
                 $class = "cosplay";
@@ -72,8 +72,8 @@ END;
             echo <<<END
     <picture>
       <source srcset="img/data/webp/$i.webp" type="image/webp">
-      <source srcset="img/data/$i.jpg" type="image/jpg">
-      <img class="$class" src="img/data/$i.jpg" decoding="async" importance="low">
+      <source srcset="img/data/${i}f.jpg" type="image/jpg">
+      <img class="$class" src="img/data/${i}f.jpg" decoding="async">
     </picture>
 
 END;
