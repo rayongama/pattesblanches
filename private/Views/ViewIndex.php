@@ -72,8 +72,8 @@ END;
             echo <<<END
     <picture>
       <source srcset="img/data/webp/$i.webp" type="image/webp">
-      <source srcset="img/data/${i}f.jpg" type="image/jpg">
-      <img class="$class" src="img/data/${i}f.jpg" decoding="async">
+      <source srcset="img/data/$i.jpg" type="image/jpg">
+      <img class="$class" src="img/data/$i.jpg" decoding="async">
     </picture>
 
 END;
