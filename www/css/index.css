@@ -48,7 +48,6 @@ header img, header picture {
 
 header a.title {
     font-size: 1.5em;
-    width: 20%;
     transition: font-size .5s;
     display: flex;
     align-items: center;
@@ -71,7 +70,6 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10em;
 }
 
 header nav a {
@@ -88,9 +86,9 @@ header nav a {
 #instagram {
     height: 1.5em;
     width: 1.5em;
-    background-size: cover;
     border-bottom: none;
     background: url('Instagram_logo.svg') no-repeat;
+    background-size: cover;
 }
 
 header nav a:hover {

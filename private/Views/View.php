@@ -12,7 +12,7 @@ class View
     public function __construct()
     {
         $this->stylesheets = [];
-        $this->addStyle("css/base.css");
+        $this->addStyle("/css/base.css");
         $this->scripts = [];
     }
 
