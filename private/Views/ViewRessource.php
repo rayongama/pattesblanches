@@ -14,7 +14,7 @@ class ViewRessource extends View
     {
         parent::__construct();
 
-        $this->addStyle("css/dl.css");
+        $this->addStyle("/css/dl.css");
     }
 
     public function setRessourceKey(string $key): ViewRessource

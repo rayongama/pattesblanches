@@ -5,8 +5,9 @@ const INITIAL_TITLE = "Pattes Blanches";
 
 $req = \GuzzleHttp\Psr7\ServerRequest::fromGlobals();
 $path = $req->getUri()->getPath();
-$key = substr($path, 1);
-if (strlen($path) !== 1 && \Pattes\Utils::downloadKeyExists($key)) {
+$keys = explode("/", $path);
+$key = $keys[1];
+if (\Pattes\Utils::downloadKeyExists($key)) {
     if ($req->getMethod() === "POST") {
         header("Content-Disposition: attachment; photos.zip");
         header("Pragma: public");

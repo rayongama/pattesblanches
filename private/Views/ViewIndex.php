@@ -12,8 +12,8 @@ class ViewIndex extends View
     {
         parent::__construct();
 
-        $this->addStyle("css/index.css");
-        $this->addScript("js/index.js");
+        $this->addStyle("/css/index.css");
+        $this->addScript("/js/index.js");
     }
 
     private $filter = false;
@@ -31,9 +31,9 @@ class ViewIndex extends View
   <header>
     <a href="/">
     <picture>
-      <source srcset="img/struct/webp/logo.webp" type="image/webp">
-      <source srcset="img/struct/logo.png" type="image/png">
-      <img src="img/struct/logo.png">
+      <source srcset="/img/struct/webp/logo.webp" type="image/webp">
+      <source srcset="/img/struct/logo.png" type="image/png">
+      <img src="/img/struct/logo.png">
     </picture></a>
     <a class="title" href="/"><span>$this->title</span></a>
     <nav>
@@ -54,9 +54,9 @@ END;
         $this->header_bar_render();
         echo <<<END
   <picture>
-      <source srcset="img/struct/webp/bg_index.webp" type="image/webp">
-      <source srcset="img/struct/bg_index.jpg" type="image/jpg">
-      <img class="header" src="img/struct/bg_index.jpg">
+      <source srcset="/img/struct/webp/bg_index.webp" type="image/webp">
+      <source srcset="/img/struct/bg_index.jpg" type="image/jpg">
+      <img class="header" src="/img/struct/bg_index.jpg">
   </picture>
   <div id="container">
 
@@ -71,9 +71,9 @@ END;
             }
             echo <<<END
     <picture>
-      <source srcset="img/data/webp/$i.webp" type="image/webp">
-      <source srcset="img/data/$i.jpg" type="image/jpg">
-      <img class="$class" src="img/data/$i.jpg" decoding="async">
+      <source srcset="/img/data/webp/$i.webp" type="image/webp">
+      <source srcset="/img/data/$i.jpg" type="image/jpg">
+      <img class="$class" src="/img/data/$i.jpg" decoding="async">
     </picture>
 
 END;

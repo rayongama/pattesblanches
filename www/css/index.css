@@ -86,12 +86,11 @@ header nav a {
 }
 
 #instagram {
-    background-image: url('Instagram_logo.svg');
     height: 1.5em;
     width: 1.5em;
     background-size: cover;
     border-bottom: none;
-    background-repeat: no-repeat;
+    background: url('Instagram_logo.svg') no-repeat;
 }
 
 header nav a:hover {
