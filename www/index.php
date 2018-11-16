@@ -28,7 +28,7 @@ if (\Pattes\Utils::downloadKeyExists($key)) {
             ->render();
     }
 } else if ($key === "article") {
-    $view = (new \Pattes\View\ViewArticle())
+    $view = (new \Pattes\View\ViewArticle($keys[2]))
         ->setTitle(INITIAL_TITLE)
         ->render();
 } else {
