@@ -53,8 +53,14 @@ header a.title {
     align-items: center;
 }
 
+header > a {
+    display: flex;
+    align-items: center;
+}
+
 header span {
     transition: font-size .5s;
+    white-space: nowrap;
 }
 
 header.reduced span {
@@ -153,4 +159,29 @@ img.header.reduced {
 
 .none {
     display: none;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    header {
+        height: 6em;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    header.reduced {
+        height: 3em;
+    }
+    header a.title {
+        display: none;
+    }
+    header nav {
+        flex-direction: column;
+        background-color: #363636;
+        width: 100%;
+        display: none;
+    }
+    header a:visited {
+        background-color: red;
+    }
 }
