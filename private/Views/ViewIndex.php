@@ -61,8 +61,8 @@ END;
   <div id="container">
 
 END;
-        $cosplay = [1, 2, 3, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33];
-        for ($i = 2; $i < 38; $i += 1) {
+        $cosplay = [1, 2, 3, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33, 38, 39, 40, 41, 42];
+        for ($i = 49; $i >= 2; $i -= 1) {
             $class = "";
             if (in_array($i, $cosplay)) {
                 $class = "cosplay";
